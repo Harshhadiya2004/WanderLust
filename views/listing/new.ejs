@@ -1,0 +1,44 @@
+<% layout("/layouts/boilerplate") -%>
+<body>
+    <div class="row">
+        <div class="col-8 offset-2">
+            <br>
+            <h3>Create a New Listing : </h3>
+            <br>
+            <form method="post" action="/listing" novalidate class="needs-validation">
+                <div class="mb-3">
+                    <label for="title" class="form-label">Title :</label>
+                    <input name="list[title]" placeholder="Enter the title" type="text" class="form-control" id="title" required></input>
+                </div>
+                <div class="mb-3">
+                    <label for="description" class="form-label">Description :</label>
+                    <textarea name="list[description]" placeholder="Enter the description" id="description" class="form-control" required></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="image" class="form-label">Image Link :</label>
+                    <input name="list[image]" placeholder="Enter the image-URL" id="image" type="text"  class="form-control"></input>
+                </div>
+                <div class="row">
+                    <div class="mb-3 col-md-4">
+                        <label for="price" class="form-label">Price :</label>
+                        <input name="list[price]" placeholder="Enter the price" type="number" id="price" class="form-control" required></input>
+                    </div>
+                    <div class="mb-3 col-md-8">
+                        <label for="country" class="form-label">Country :</label>
+                        <input name="list[country]" placeholder="Enter the country" type="text" id="country" class="form-control" required></input>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="location" class="form-label">Location :</label>
+                    <input name="list[location]" placeholder="Enter the location" type="text" id="location" class="form-control" required></input>
+                </div>
+                
+                <br>
+                <button class="btn btn-dark add-btn">Add</button>
+                
+            </form>
+            <br>
+        </div>
+    </div>
+</body>
+</html>
